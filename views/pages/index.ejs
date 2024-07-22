@@ -1,0 +1,191 @@
+<%- include('../partials/head'); %>
+<%- include('../partials/nav'); %>
+
+<div class="container" id="hZtDYS">
+  <div id="hero-image">
+    <!-- TODO: update this image to something better -->
+    <img id="maxwell-image" src="/images/maxwell-desjardins.avif" alt="Portrait of Maxwell Desjardins" width="200px" height="200px">
+  </div>
+  <div id="my-name">
+    <h1><mark>Maxwell</mark><br>Desjardins</h1>
+  </div>
+
+  <div id="word-container">
+    <h2 class="slogan">Making the</h2>
+    <h2 id="impossible" class="slogan">
+      <a id="hire-me" href="/hire-me">IM<span id="possible">POSSIBLE</span></a>
+    </h2>
+  </div>
+
+  <div id="stats">
+    <div class="stat-container">
+      <p class="count"><strong>240</strong></p>
+      <div class="group-text">
+        <p class="label">Coding Hours</p>
+        <p class="period-suffix">(Last month)</p>
+      </div>
+    </div>
+    <div class="stat-container">
+      <p class="count"><strong>422</strong></p>
+      <div class="group-text">
+        <p class="label">GitHub</p>
+        <p class="label">Contributions</p>
+        <p>(Last Year)</p>
+      </div>
+    </div>
+    <div class="stat-container">
+      <p class="count"><strong>34</strong></p>
+      <div class="group-text">
+        <p class="label">Code Reviews Completed</p>
+        <p>(Last Year)</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="feature-header">
+    <div><h2>Projects</h2></div>
+  </section>
+
+  <section id="projects">
+    <div class="grid">
+      <article>
+        <div class="project-title">
+          <img src="/images/phone.svg" alt="icon representation of a phone" width="32px" height="32px">
+          <h3>Rep Health Application</h3>
+        </div>
+        <!-- TODO: make a sandbox version -->
+        <p>
+          A fully fledged PWA app with over 10,000 users.<br>
+          Tech:
+          <br>
+          Mithril.js, SCSS, TypeScript, Node.js, Prisma, MariaDB, Redis, Google Analytics, Plausible, Docker, Linode.
+          <ul>
+            <li>Fully Type Safe Front End and Back End</li>
+            <li>Multi-Tenancy Customers (Education, Corporate)</li>
+            <li>Fully Fledged Admin Dashboard</li>
+            <li>Authentication</li>
+            <li>Role Based Users and Accounts</li>
+          </ul>
+        </p>
+        <p>
+          <a id="rep-app" href="https://app.rephealth.com/login" target="_blank">Go To Rep Health Sandbox</a>
+        </p>
+      </article>
+
+      <article>
+        <div class="project-title">
+          <img src="/images/browser-chrome.svg" alt="icon representation of a web browser" width="32px" height="32px">
+          <h3>Rep Health Website</h3>
+        </div>
+        <p>
+          Beautifully built website from the ground up.<br>
+          Tech:
+          <br>
+          Astro.js, CSS, HTML, TypeScript, GitHub, Google Analytics, Linode and Docker.
+          From inital conept to final deployment.
+          <ul>
+            <li>Efficient Static Site</li>
+            <li>Fully Responsive and Visually Appealing Design</li>
+            <li>Dynamic Functionality</li>
+            <li>Meticulous SEO Practices</li>
+            <li>Accessability Compliant</li>
+          </ul>
+        </p>
+        <p>
+          <a href="https://rephealth.com/" target="_blank">Go To Rep Health</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article>
+        <div class="project-title">
+          <img src="/images/browser-chrome.svg" alt="icon representation of a web browser" width="32px" height="32px">
+          <h3>Maxwell Desjardins Portfolio</h3>
+        </div>
+        <p>
+          Beautiful, modern, reliable website built from the ground up.<br>
+          Tech:
+          <br>
+          HTML, CSS, JavaScript, Node.js, GitHub, Redis, Umami, Raspberry PI, NGINX and Docker.
+        <ul>
+          <li>Highly Performant</li>
+          <li>Accessability Compliant</li>
+          <li>Self Hosted</li>
+          <li>System Emails</li>
+          <li>Fully Responsive</li>
+        </ul>
+        </p>
+        <p>
+          <a href="https://github.com/Maxed0utt/maxwell-desjardins-portfolio" target="_blank">See On GitHub</a>
+        </p>
+      </article>
+
+      <article>
+        <div class="project-title">
+          <img src="/images/phone.svg" alt="icon representation of a phone" width="32px" height="32px">
+          <h3>Dads Finance</h3>
+        </div>
+        <p>
+          Personal Project made for my Dad's finances!<br>
+          Tech:
+          <br>
+          Vue, LESS, BootStrap, HTML, JavaScript, Node.js, MariaDB, Redis, GitHub, Raspberry PI, NGINX and Docker.
+        <ul>
+          <li>Authentication</li>
+          <li>System Emails Sent With SendGrid Integration</li>
+          <li>Highly Performant</li>
+          <li>Front and Back End</li>
+          <li>Fully Responsive</li>
+        </ul>
+        </p>
+        <p>
+          <a href="#" target="_blank">See On GitHub</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature-header">
+    <div>
+      <h2>Advocate of <mark>Clean Code.</mark></h2>
+      <p>Improve readability, maintainability, and reduce the likelihood of bugs.</p>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section id="comparison">
+      <div class="grid">
+        <div class="compare">
+          <p>
+            <span class="emoji">🤮</span>
+            Other Devs Code
+          </p>
+          <article>
+            <img src="/images/bad-code.avif" alt="a paragraph of badly written code">
+          </article>
+        </div>
+        <div class="compare">
+          <p>
+            <span class="emoji">😌</span>
+            Maxwell Desjardins' Code
+          </p>
+          <article class="demo">
+            <img src="/images/good-code.avif" alt="a paragraph of well written code">
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="center-button">
+    <a id="get-in-touch" href="/hire-me" type="button">
+      Get In Touch
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<%- include('../partials/footer'); %>

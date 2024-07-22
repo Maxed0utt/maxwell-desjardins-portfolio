@@ -1,0 +1,108 @@
+#lDUHFs {
+  padding: var(--pico-spacing);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color .5s;
+
+  #maxwell-desjardins {
+    background: linear-gradient(to right, #d78dd2, #b999ee, #9da5e9, #8fa9f0);
+    background-clip: text;
+    color: transparent;
+  }
+
+  #about {
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  #github {
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  #hire-me {
+    white-space: nowrap;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  header nav li button svg {
+    width: var(--font-size);
+    height: var(--font-size);
+    color: var(--contrast);
+  }
+
+  #theme-switcher {
+    background: none;
+    border: none;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  /*------ Settings ------*/
+  .check-contain {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+
+  .check-contain .moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+
+  .check-contain .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+
+  /* ------ On check event ------ */
+  .check-contain input:checked~.moon {
+    display: none;
+  }
+
+  .check-contain input:checked~.sun {
+    display: block;
+  }
+
+  /* ------ Hide the default checkbox ------ */
+  .check-contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-360deg) scale(0);
+      opacity: 0;
+    }
+
+    75% {
+      transform: rotate(25deg);
+    }
+  }
+}
+
+.background-reveal {
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 12px 24px -12px rgba(0,0,0,0.6);
+  box-shadow: 0px 12px 24px -12px rgba(0,0,0,0.6);
+  background-color: var(--pico-background-color);
+  border-bottom: 1px solid var(--pico-muted-border-color);
+}

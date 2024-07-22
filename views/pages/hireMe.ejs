@@ -1,0 +1,68 @@
+<%- include('../partials/head'); %>
+<%- include('../partials/nav'); %>
+
+<div class="container" id="P6qeA2">
+  <h1>Let's Chat. <br>Tell me about your project.</h1>
+  <p>Let's create something together 🤟</p>
+  <hr>
+
+  <form id="form">
+    <p id="serverError" class="error-message"></p>
+    <fieldset>
+      <label>
+        Name *
+        <input id="name" type="text" name="name" placeholder="Name" required>
+        <p id="nameError" class="error-message"></p>
+      </label>
+
+      <label>
+        Email *
+        <input id="email" type="email" name="email" placeholder="Email" required>
+        <p id="emailError" class="error-message"></p>
+      </label>
+
+      <label>
+        Phone
+        <input id="phone" type="tel" name="phone" placeholder="Phone Number">
+        <p id="phoneError" class="error-message"></p>
+      </label>
+
+      <label>
+        Position Title *
+        <input id="position" type="text" name="position" placeholder="Position Title" required>
+        <p id="positionError" class="error-message"></p>
+      </label>
+
+      <label>
+        Budget
+        <br>
+        <p id="budgetText">$50/hour</p>
+        <input id="budget" type="range" name="budget" placeholder="Budget" value="50">
+      </label>
+
+      <label>
+        Job Description
+        <textarea id="positionDescription" name="positionDescription" placeholder="Short Description of Job"></textarea>
+      </label>
+    </fieldset>
+
+    <input id="sendMessage" type="submit" value="Send Message">
+  </form>
+</div>
+
+<dialog id="modal">
+  <article>
+    <header>
+      <button id="modal-close-button" aria-label="Close" rel="prev"></button>
+      <p>
+        <strong>🥳 Thank you For Your Interest In Me!</strong>
+      </p>
+    </header>
+    <p>Your email went through successfully.</p>
+    <p>Thank you for your interest in hiring me. I appreciate the opportunity and will be in contact with you soon!</p>
+    <p>(24-48 hours)</p>
+  </article>
+</dialog>
+
+<%- include('../partials/footer'); %>
+<script src="/js/hireMe.js"></script>

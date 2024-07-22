@@ -1,0 +1,19 @@
+#OCHFCL {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 200px;
+  @media only screen and (max-width: 375px) {
+    padding-top: 100px;
+  }
+
+  #footer-nav {
+    display: grid;
+    place-items: center;
+  }
+}
+
+#OCHFCL:after {
+  content: "";
+  display: block;
+  height: 100px;
+}

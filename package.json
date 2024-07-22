@@ -1,0 +1,25 @@
+{
+  "name": "maxwell-desjardins-portfolio",
+  "version": "1.0.0",
+  "description": "Maxwell Desjardins beautiful portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "eslint ./ && node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Maxwell Desjardins",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "eslint": "^8.37.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "nodemailer": "^6.9.14"
+  }
+}

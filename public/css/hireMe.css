@@ -1,0 +1,22 @@
+#P6qeA2 {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 200px;
+  @media only screen and (max-width: 375px) {
+    padding-top: 100px;
+  }
+
+  .error-message {
+    margin: 0;
+  }
+
+  #serverError {
+    text-align: center;
+  }
+}
+
+#P6qeA2:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
