@@ -56,4 +56,3 @@ Welcome to my portfolio! I am a dedicated and passionate web developer with exte
 - Figma
 - AdobeXD
 - Photoshop
-# maxwell-desjardins-portfolio
