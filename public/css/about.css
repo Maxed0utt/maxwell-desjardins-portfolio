@@ -5,6 +5,24 @@
   @media only screen and (max-width: 375px) {
     padding-top: 100px;
   }
+
+  .experience {
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  #center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #get-in-touch {
+      white-space: nowrap;
+    }
+  }
 }
 
 #WpTjbx:after {
