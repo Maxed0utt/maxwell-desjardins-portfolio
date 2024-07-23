@@ -129,8 +129,10 @@ function validateForm() {
     sendErrorMessageToUser('positionError', 'Please enter the name of the position.')
     return false
   }
+  if (data.phone === '') data.phone = undefined
+  if (data.positionDescription === '') data.positionDescription = undefined
   // incorrect format
-  if ((data.phone !== undefined || data.phone !== '') && !isPhoneValid(data.phone)) {
+  if (data.phone && !isPhoneValid(data.phone)) {
     sendErrorMessageToUser('phoneError', 'Enter a valid phone number with digits, spaces, dashes, dots, or parentheses, optionally starting with + and up to 2 digits. \n (e.g., 123-456-7890, +91 (123) 456-7890).')
     return false
   }
