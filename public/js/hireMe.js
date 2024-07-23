@@ -130,7 +130,7 @@ function validateForm() {
     return false
   }
   // incorrect format
-  if (!isPhoneValid(data.phone)) {
+  if ((data.phone !== undefined || data.phone !== '') && !isPhoneValid(data.phone)) {
     sendErrorMessageToUser('phoneError', 'Enter a valid phone number with digits, spaces, dashes, dots, or parentheses, optionally starting with + and up to 2 digits. \n (e.g., 123-456-7890, +91 (123) 456-7890).')
     return false
   }
