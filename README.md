@@ -56,3 +56,8 @@ Welcome to my portfolio! I am a dedicated and passionate web developer with exte
 - Figma
 - AdobeXD
 - Photoshop
+
+# Getting Started
+- clone the repo
+- run ```npm install```
+- run ```npm run dev```
