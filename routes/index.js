@@ -57,13 +57,13 @@ module.exports = app => {
             Looking forward to connecting with you soon!\n
             Maxwell Desjardins
             Software Developer
-            705-918-1773
+            ${process.env.PHONE_NUMBER}
             maxwelldesjardins.com
           `
         })
         await transporter.sendMail({
           from: `MaxwellDesjardins.com <${process.env.GMAIL_USER}>`,
-          to: 'max.desjardins@hotmail.ca',
+          to: process.env.TO_EMAIL,
           subject: 'Someone is Looking to Hire You! - MaxwellDesjardins.com',
           text: `
             FROM: ${value.name}\n
