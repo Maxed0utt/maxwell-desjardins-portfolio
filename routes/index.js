@@ -24,7 +24,6 @@ module.exports = app => {
   app.post('/send-email', async (req, res) => {
     console.log(`request made to: /send-email at ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}`)
     const body = req.body
-    res.status(200)
     const schema = joi.object({
       name: joi.string().required(),
       email: joi.string().email().required(),
@@ -47,7 +46,7 @@ module.exports = app => {
       })
       try {
         // send mail with defined transport object
-        await transporter.sendMail({
+        transporter.sendMail({
           from: `MaxwellDesjardins.com <${process.env.GMAIL_USER}>`,
           to: value.email,
           subject: 'Thank You For Your Interest - MaxwellDesjardins.com',
@@ -60,8 +59,8 @@ module.exports = app => {
             ${process.env.PHONE_NUMBER}
             maxwelldesjardins.com
           `
-        })
-        await transporter.sendMail({
+        }).then(() => console.log(`thank you for interest email sent ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}`))
+        transporter.sendMail({
           from: `MaxwellDesjardins.com <${process.env.GMAIL_USER}>`,
           to: process.env.TO_EMAIL,
           subject: 'Someone is Looking to Hire You! - MaxwellDesjardins.com',
@@ -73,7 +72,7 @@ module.exports = app => {
             Budget: ${value.budget ? value.budget : ''}\n
             Position Description: ${value.positionDescription ? value.positionDescription : ''}
           `
-        })
+        }).then(() => console.log(`email sent to me ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}`))
         return res.status(200).send('Success')
       } catch (e) {
         console.log('email failed!!')
