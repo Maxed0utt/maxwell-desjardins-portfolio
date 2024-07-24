@@ -21,7 +21,7 @@ module.exports = app => {
     res.render('hireMe', {title: 'Hire Me'})
   })
 
-  app.post('/send-email', async (req, res) => {
+  app.post('/send-email', (req, res) => {
     console.log(`request made to: /send-email at ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}`)
     const body = req.body
     const schema = joi.object({
