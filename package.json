@@ -11,7 +11,6 @@
   "author": "Maxwell Desjardins",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.13.1",
     "eslint": "^8.37.0"
   },
   "dependencies": {
