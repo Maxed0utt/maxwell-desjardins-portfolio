@@ -2,6 +2,11 @@ const nodemailer = require('nodemailer')
 const joi = require('joi')
 require('dotenv').config()
 
+// TODO: add rate limiting to all endpoints
+// TODO: add ip addresses to request logs and if they hit rate limit automatically ban that ip
+// TODO: save request logs in database
+// TODO: save emails in database
+
 module.exports = app => {
   // Home page route
   app.get('/', (req, res) => {
@@ -52,7 +57,7 @@ module.exports = app => {
           subject: 'Thank You For Your Interest - MaxwellDesjardins.com',
           text: `
             Thanks for reaching out regarding potential collaboration on your software development project. I appreciate your interest in me and am excited about the possibility of working together.\n
-            I will review your message and get back to you within 24-48 hours to discuss the next steps.\n
+            I will review your message and get back to you to discuss the next steps.\n
             Looking forward to connecting with you soon!\n
             Maxwell Desjardins
             Software Developer
